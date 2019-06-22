@@ -9,14 +9,14 @@ let showMenu = false;
 menuBtn.addEventListener('click', toggleMenu);
 
 function toggleMenu() {
-  if(showMenu){
+  if(!showMenu){
     menuBtn.classList.add('close');
     menu.classList.add('show');
     menuNav.classList.add('show');
     menuBranding.classList.add('show');
     navItems.forEach(item => item.classList.add('show'));
     // Reset menu state
-    showMenu = false;
+    showMenu = true;
   } else {
     menuBtn.classList.remove('close');
     menu.classList.remove('show');
@@ -24,6 +24,6 @@ function toggleMenu() {
     menuBranding.classList.remove('show');
     navItems.forEach(item => item.classList.remove('show'));
     // Reset menu state
-    showMenu = true;
+    showMenu = false;
   }
 }
