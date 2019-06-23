@@ -1,5 +1,5 @@
-$primary-color: #444;
-$secondary-color: #eece1a;
+$primary-color: #F5F1E3;
+$secondary-color: #FE5F55;
 $show-home-image: true;
 $home-image: url('https://images.pexels.com/photos/2194062/pexels-photo-2194062.jpeg?auto=compress&cs=tinysrgb&h=650&w=940');
 $background-opacity: 0.8;
@@ -14,17 +14,6 @@ $background-opacity: 0.8;
       background: $home-image;
       background-attachment: fixed;
       background-size: cover;
-
-      &:after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-        background: rgba($primary-color, $background-opacity);
-      }
     }
   }
 }

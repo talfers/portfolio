@@ -27,3 +27,7 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+
+// Smooth Scroll Setup
+var scroll = new SmoothScroll('a[href*="#"]');
