@@ -4,7 +4,8 @@
   "description": "responsive portfolio website",
   "main": "index.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "start": "node index.js"
   },
   "author": "Taylor Alfers",
   "license": "ISC",
