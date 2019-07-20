@@ -8,7 +8,7 @@
 // Desktops & Laptops
 @include mediaLg {
   .projects {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -50,6 +50,76 @@
     }
   }
 
+  section#what {
+    .skills {
+      grid-template-columns: 1fr;
+    }
+
+  }
+
+  section#how {
+    .tools {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 2rem;
+
+      .tool {
+
+        img {
+          height: 75px;
+        }
+      }
+    }
+  }
+
+  section#contact {
+    flex-direction: column;
+
+    .contact-left, .contact-right {
+      width: 100%;
+
+      a {
+        padding: 2rem;
+      }
+
+      p {
+        font-size: 0.75;
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+
+    .contact-right {
+
+      a {
+        height: 240px;
+        width: 240px;
+      }
+
+      &:hover {
+        a {
+          height: 160px;
+        }
+      }
+    }
+
+    .contact-left {
+      background: $secondary-color;
+
+      a {
+        height: 160px;
+        width: 240px;
+      }
+
+      &:not(:hover) {
+        a {
+          height: 240px;
+        }
+      }
+    }
+  }
 
   .about-info {
     grid-template-areas:
@@ -63,6 +133,10 @@
 
   .projects {
     grid-template-columns: repeat(2, 1fr);
+
+    .item .inlay .top p {
+      font-size: 0.75rem;
+    }
   }
 }
 
@@ -72,15 +146,38 @@
     margin-top: 10vh;
   }
 
+  section#how {
+    .tools {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1rem;
+
+      .tool {
+
+        img {
+          height: 60px;
+        }
+
+        h3 {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+
   section#contact {
     flex-direction: column;
 
     .contact-left, .contact-right {
       width: 100%;
     }
+
   }
 
   .projects {
     grid-template-columns: 1fr;
+    // SEE HERE!
+    .item .inlay .top p {
+      font-size: 1rem;
+    }
   }
 }

@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Contact Me</title>
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link rel="stylesheet" href="/css/main.css">
 </head>
@@ -39,17 +40,19 @@
     <h1 class='lg-header'>Contact <span class='text-secondary'>Me</span></h1>
     <h2 class='sm-header'>Let's get in touch!</h2>
     <div class='boxes'>
-      <div>
-        <span class="text-secondary">Email:</span>
-        tayloralfers@gmail.com
+      <div class='message'>
+        <h3>Let's talk about how I can help your business grow.</h3>
       </div>
-      <div>
-        <span class="text-secondary">Phone:</span>
-        (316) 213-6004
-      </div>
-      <div>
-        <span class="text-secondary">Address:</span>
-        Littleton, Colorado
+      <div class='contact-form'>
+        <h3>Tell Me About Your Project...</h3>
+        <form action="/contact" action="POST">
+          <input placeholder="First Name" type="text" name="first-name" value="">
+          <input placeholder="Last Name" type="text" name="last-name" value="">
+          <input placeholder="Email" type="text" name="email" value="">
+          <input placeholder="Phone (optional)" type="text" name="phone" value="">
+          <input placeholder="Subject" type="text" name="subject" value="">
+          <textarea placeholder="" name="body" rows="8" cols="80"></textarea>
+        </form>
       </div>
     </div>
   </main>
