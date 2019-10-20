@@ -16,7 +16,7 @@
     height: 300px;
     width: 300px;
     border: $secondary-color 3px solid;
-    object-fit: cover;
+    object-fit: contain;
   }
 
   .bio {
@@ -74,7 +74,7 @@
 
   .item {
     position: relative;
-    height: 240px;
+    height: 280px;
     border-radius: 1rem;
     overflow: hidden;
 
@@ -99,6 +99,7 @@
         align-items: center;
         opacity: 0;
         transition: 0.4s ease-out 0.4s;
+
       }
 
       .top {
@@ -106,6 +107,7 @@
         flex-direction: column;
         transform: translateY(0px);
         text-align: center;
+        padding: 0 2rem;
 
         h3 {
           font-size: 2rem;
@@ -157,6 +159,24 @@
 }
 
 // Contact Styles
+#contact-page {
+  padding-right: 160px;
+  padding-left: 160px;
+  position: relative;
+  background: #EBE9EA;
+  z-index: -10;
+
+  #contact-background {
+    z-index: -9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
+
 .boxes {
   display: flex;
   justify-content: center;
@@ -167,24 +187,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 75vh;
-    width: 50%;
+    flex: 1;
     @include easeOut;
-
-    &.message {
-      text-align: center;
-      padding: 2rem;
-      font-family: 'Permanent Marker', cursive;
-      background: $secondary-color;
-
-      h3 {
-        font-size: 2.5rem;
-      }
-    }
 
     &.contact-form {
       flex-direction: column;
-      background: darken($primary-color, 5);
+      background: transparent;
+      width: 50%;
+      margin-right: 200px;
 
       h3 {
         font-size: 1.5rem;
@@ -199,12 +209,18 @@
         input, textarea {
           width: 100%;
           margin: 0.25rem 0;
+          border: none;
           border-radius: 1rem;
           padding-left: 0.5rem;
         }
 
         input {
           height: 1.75rem;
+        }
+
+        button[type=submit]{
+          width: 100%;
+          background: $secondary-color;
         }
       }
     }

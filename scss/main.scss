@@ -20,8 +20,30 @@ a {
   text-decoration: none;
 }
 
+
 section {
   min-height: 100vh;
+
+  @keyframes fade-in {
+    0% {
+      opacity: 0;
+      transform: scale(0);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .hidden {
+    opacity: 0;
+  }
+
+  .fade-in {
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
 
   &#bg-image {
     @include background;
@@ -100,7 +122,7 @@ section {
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    padding: 3rem;
+    padding: 3rem 6rem;
 
     .skills {
       display: grid;
@@ -115,9 +137,22 @@ section {
         border-bottom: $secondary-color 5px solid;
         justify-content: center;
         background: darken($primary-color, 5);
-        padding: 1rem 2rem;
+        padding: 1.5rem 2rem;
         text-align: center;
+        opacity: 0;
 
+        @for $i from 1 through 3 {
+          &:nth-child(#{$i}) {
+            // Delay the animation. Delay increases as items loop.
+            animation-delay: $i * (1s / 6);
+          }
+        }
+
+        img {
+          height: 80px;
+          margin: 12px 0px;
+
+        }
         h3 {
           font-size: 1.5rem;
           font-weight: bold;
@@ -150,6 +185,13 @@ section {
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        &.hidden {
+          opacity: 0;
+        }
+        &.fade-in {
+          animation: fade-in 1s;
+        }
 
         img {
           height: 80px;
@@ -290,6 +332,7 @@ main {
   border: none;
   margin-bottom: 0.3rem;
   text-decoration: none;
+  cursor: pointer;
 
   &:hover {
     background: $secondary-color;

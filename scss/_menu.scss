@@ -90,6 +90,14 @@
       background: url('');
       border-radius: 50%;
       border: solid 3px $secondary-color;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: contain;
+        object-position: bottom;
+      }
     }
   }
   .nav-item {
