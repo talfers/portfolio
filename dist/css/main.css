@@ -205,19 +205,16 @@
         transform: translateY(-1.5rem); }
 
 #contact-page {
-  padding-right: 160px;
-  padding-left: 160px;
-  position: relative;
-  background: #EBE9EA;
-  z-index: -10; }
+  position: relative; }
   #contact-page #contact-background {
-    z-index: -9;
+    z-index: -1;
     position: absolute;
     top: 0;
     left: 0;
+    bottom: 0;
     width: 100%;
-    max-height: 100%;
-    object-fit: contain; }
+    min-height: 100%;
+    object-fit: cover; }
 
 .boxes {
   display: flex;
@@ -233,8 +230,7 @@
     .boxes div.contact-form {
       flex-direction: column;
       background: transparent;
-      width: 50%;
-      margin-right: 200px; }
+      width: 60%; }
       .boxes div.contact-form h3 {
         font-size: 1.5rem; }
       .boxes div.contact-form form {
@@ -247,7 +243,8 @@
           margin: 0.25rem 0;
           border: none;
           border-radius: 1rem;
-          padding-left: 0.5rem; }
+          padding-left: 0.5rem;
+          outline: none; }
         .boxes div.contact-form form input {
           height: 1.75rem; }
         .boxes div.contact-form form button[type=submit] {
@@ -602,13 +599,17 @@ main {
     .projects .item {
       height: 45vh; }
       .projects .item .inlay {
-        display: none; } }
+        display: none; }
+  .boxes {
+    flex-direction: column; } }
 
 @media screen and (max-width: 500px) {
   main {
     padding: 2rem 2rem; }
   h1.sm-header, h2.sm-header, h3.sm-header {
     width: 75%; }
+  section#bg-image:after {
+    background: rgba(245, 245, 245, 0.6); }
   section#what, section#how {
     padding: 1rem 2rem; }
   section#bg-image article#home {

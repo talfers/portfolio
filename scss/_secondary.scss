@@ -160,20 +160,17 @@
 
 // Contact Styles
 #contact-page {
-  padding-right: 160px;
-  padding-left: 160px;
   position: relative;
-  background: #EBE9EA;
-  z-index: -10;
 
   #contact-background {
-    z-index: -9;
+    z-index: -1;
     position: absolute;
     top: 0;
     left: 0;
+    bottom: 0;
     width: 100%;
-    max-height: 100%;
-    object-fit: contain;
+    min-height: 100%;
+    object-fit: cover;
   }
 }
 
@@ -193,8 +190,7 @@
     &.contact-form {
       flex-direction: column;
       background: transparent;
-      width: 50%;
-      margin-right: 200px;
+      width: 60%;
 
       h3 {
         font-size: 1.5rem;
@@ -212,6 +208,7 @@
           border: none;
           border-radius: 1rem;
           padding-left: 0.5rem;
+          outline: none;
         }
 
         input {

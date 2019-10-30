@@ -160,6 +160,10 @@
       }
     }
   }
+  .boxes {
+    flex-direction: column;
+
+  }
 }
 
 // Smartphones
@@ -173,6 +177,13 @@
     }
   }
   section {
+
+    &#bg-image {
+
+      &:after {
+        background: rgba($primary-color, 0.6);
+      }
+    }
 
     &#what, &#how {
       padding: 1rem 2rem;
