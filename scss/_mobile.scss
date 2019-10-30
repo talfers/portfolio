@@ -9,6 +9,20 @@
 @include mediaLg {
   .projects {
     grid-template-columns: repeat(2, 1fr);
+
+      .item {
+        height: 45vh;
+
+        .inlay .top {
+          h3 {
+            font-size: 1.5rem;
+          }
+
+          p {
+            font-size: 0.85rem;
+          }
+        }
+      }
   }
 }
 
@@ -132,10 +146,14 @@
   }
 
   .projects {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
 
-    .item .inlay .top p {
-      font-size: 0.75rem;
+    .item {
+      height: 45vh;
+
+      .inlay {
+        display: none;
+      }
     }
   }
 }
@@ -176,8 +194,12 @@
   .projects {
     grid-template-columns: 1fr;
     // SEE HERE!
-    .item .inlay .top p {
-      font-size: 1rem;
+    .item {
+      height: 45vh;
+
+      .inlay {
+        display: none;
+      }
     }
   }
 }
