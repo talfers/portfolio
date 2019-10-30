@@ -590,6 +590,8 @@ main {
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
+  .help {
+    width: 100%; }
   .projects {
     grid-template-columns: repeat(1, 1fr); }
     .projects .item {

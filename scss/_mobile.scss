@@ -145,6 +145,10 @@
     grid-template-columns: 1fr;
   }
 
+  .help {
+    width: 100%;
+  }
+
   .projects {
     grid-template-columns: repeat(1, 1fr);
 
