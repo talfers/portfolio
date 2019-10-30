@@ -230,7 +230,7 @@
     .boxes div.contact-form {
       flex-direction: column;
       background: transparent;
-      width: 60%; }
+      width: 100%; }
       .boxes div.contact-form h3 {
         font-size: 1.5rem; }
       .boxes div.contact-form form {
@@ -249,7 +249,8 @@
           height: 1.75rem; }
         .boxes div.contact-form form button[type=submit] {
           width: 100%;
-          background: #FE5F55; }
+          background: #FE5F55;
+          margin: 0.5rem 0; }
 
 * {
   box-sizing: border-box; }
@@ -495,7 +496,8 @@ main {
   border: none;
   margin-bottom: 0.3rem;
   text-decoration: none;
-  cursor: pointer; }
+  cursor: pointer;
+  color: #f5f5f5; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
     background: #FE5F55;
     color: #333; }
@@ -569,7 +571,8 @@ main {
   section#contact {
     flex-direction: column; }
     section#contact .contact-left, section#contact .contact-right {
-      width: 100%; }
+      width: 100%;
+      transition: none; }
       section#contact .contact-left a, section#contact .contact-right a {
         padding: 2rem; }
       section#contact .contact-left p, section#contact .contact-right p {
@@ -578,17 +581,19 @@ main {
       section#contact .contact-left h1, section#contact .contact-right h1 {
         font-size: 2rem; }
     section#contact .contact-right a {
+      border-radius: 0;
       height: 240px;
       width: 240px; }
-    section#contact .contact-right:hover a {
-      height: 160px; }
     section#contact .contact-left {
       background: #FE5F55; }
-      section#contact .contact-left a {
-        height: 160px;
-        width: 240px; }
       section#contact .contact-left:not(:hover) a {
-        height: 240px; }
+        border-radius: 50%;
+        height: 240px;
+        width: 240px; }
+      section#contact .contact-left a {
+        border-radius: 50%;
+        height: 240px;
+        width: 240px; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
@@ -628,6 +633,9 @@ main {
     flex-direction: column; }
     section#contact .contact-left, section#contact .contact-right {
       width: 100%; }
+    section#contact .contact-right a {
+      width: 240px;
+      border-radius: 0; }
   .about-info .bio-image {
     height: 200px;
     width: 200px; }

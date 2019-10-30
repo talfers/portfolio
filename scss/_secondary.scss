@@ -190,7 +190,7 @@
     &.contact-form {
       flex-direction: column;
       background: transparent;
-      width: 60%;
+      width: 100%;
 
       h3 {
         font-size: 1.5rem;
@@ -218,6 +218,7 @@
         button[type=submit]{
           width: 100%;
           background: $secondary-color;
+          margin: 0.5rem 0;
         }
       }
     }

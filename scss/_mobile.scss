@@ -90,6 +90,7 @@
 
     .contact-left, .contact-right {
       width: 100%;
+      transition: none;
 
       a {
         padding: 2rem;
@@ -108,30 +109,28 @@
     .contact-right {
 
       a {
+        border-radius: 0;
         height: 240px;
         width: 240px;
       }
 
-      &:hover {
-        a {
-          height: 160px;
-        }
-      }
     }
 
     .contact-left {
       background: $secondary-color;
 
-      a {
-        height: 160px;
+      &:not(:hover) a {
+        border-radius: 50%;
+        height: 240px;
         width: 240px;
       }
 
-      &:not(:hover) {
-        a {
-          height: 240px;
-        }
+      a {
+        border-radius: 50%;
+        height: 240px;
+        width: 240px;
       }
+
     }
   }
 
@@ -224,6 +223,14 @@
       width: 100%;
     }
 
+    .contact-right {
+      a {
+        width: 240px;
+        border-radius: 0;
+      }
+
+    }
+
   }
 
   .about-info {
@@ -248,4 +255,5 @@
       }
     }
   }
+
 }
