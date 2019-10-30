@@ -160,6 +160,9 @@
 
 // Smartphones
 @include mediaSm {
+  main {
+    padding: 1rem;
+  }
   h1, h2, h3 {
     &.sm-header {
       width: 75%;
@@ -212,7 +215,7 @@
     grid-template-columns: 1fr;
     // SEE HERE!
     .item {
-      height: 45vh;
+      height: 40vh;
 
       .inlay {
         display: none;

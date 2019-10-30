@@ -597,6 +597,8 @@ main {
         display: none; } }
 
 @media screen and (max-width: 500px) {
+  main {
+    padding: 1rem; }
   h1.sm-header, h2.sm-header, h3.sm-header {
     width: 75%; }
   section#what, section#how {
@@ -620,6 +622,6 @@ main {
   .projects {
     grid-template-columns: 1fr; }
     .projects .item {
-      height: 45vh; }
+      height: 40vh; }
       .projects .item .inlay {
         display: none; } }
