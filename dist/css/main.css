@@ -275,16 +275,21 @@ section {
 @keyframes fade-in {
   0% {
     opacity: 0;
-    transform: scale(0); }
+    transform: scale(0);
+    -webkit-transform: scale(0); }
   100% {
     opacity: 1;
-    transform: scale(1); } }
+    transform: scale(1);
+    -webkit-transform: scale(1); } }
   section .hidden {
     opacity: 0; }
   section .fade-in {
     animation-name: fade-in;
+    -webkit-animation-name: fade-in;
     animation-duration: 1s;
-    animation-fill-mode: forwards; }
+    -webkit-animation-duration: 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards; }
   section#bg-image#bg-image {
     background: url("https://images.pexels.com/photos/2194062/pexels-photo-2194062.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
     background-attachment: fixed;
