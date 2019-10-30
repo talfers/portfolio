@@ -297,6 +297,7 @@ section {
     bottom: 0;
     left: 0;
     width: 100%;
+    min-height: 100vh;
     height: 100%;
     z-index: 0;
     background: rgba(245, 245, 245, 0.8); }
@@ -598,7 +599,7 @@ main {
 
 @media screen and (max-width: 500px) {
   main {
-    padding: 1rem; }
+    padding: 2rem 1rem; }
   h1.sm-header, h2.sm-header, h3.sm-header {
     width: 75%; }
   section#what, section#how {
