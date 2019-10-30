@@ -599,7 +599,7 @@ main {
 
 @media screen and (max-width: 500px) {
   main {
-    padding: 2rem 1rem; }
+    padding: 2rem 2rem; }
   h1.sm-header, h2.sm-header, h3.sm-header {
     width: 75%; }
   section#what, section#how {
@@ -620,9 +620,14 @@ main {
     flex-direction: column; }
     section#contact .contact-left, section#contact .contact-right {
       width: 100%; }
+  .about-info .bio-image {
+    height: 200px;
+    width: 200px; }
+  .about-info .bio {
+    font-size: 1.25rem; }
   .projects {
     grid-template-columns: 1fr; }
     .projects .item {
-      height: 40vh; }
+      height: 35vh; }
       .projects .item .inlay {
         display: none; } }
