@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const emailAuth = require('./config/emailAuth');
+// const emailAuth = require('./config/emailAuth');
 const transporter = require('./config/emailConfig');
 const port = process.env.PORT || 3000;
 
