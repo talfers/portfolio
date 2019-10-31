@@ -45,12 +45,12 @@
     <div class='boxes'>
       <div class='contact-form'>
         <h3>Tell Me About Your Project...</h3>
-        <form action="/contact" action="POST">
-          <input placeholder="Full Name" type="text" name="last-name" value="">
-          <input placeholder="Email" type="text" name="email" value="">
-          <input placeholder="Phone (optional)" type="text" name="phone" value="">
-          <input placeholder="Subject" type="text" name="subject" value="">
-          <textarea placeholder="" name="body" rows="8" cols="80"></textarea>
+        <form action="/contact" method="POST">
+          <input placeholder="Full Name" type="text" name="name">
+          <input placeholder="Email" type="text" name="email">
+          <input placeholder="Phone (optional)" type="text" name="phone">
+          <input placeholder="Subject" type="text" name="subject">
+          <textarea placeholder="" name="message" rows="8" cols="80"></textarea>
           <button class='btn btn-secondary' type="submit">Submit</button>
         </form>
       </div>

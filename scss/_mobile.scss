@@ -113,7 +113,6 @@
         height: 240px;
         width: 240px;
       }
-
     }
 
     .contact-left {
@@ -182,7 +181,6 @@
   }
   .boxes {
     flex-direction: column;
-
   }
 }
 
@@ -197,9 +195,7 @@
     }
   }
   section {
-
     &#bg-image {
-
       &:after {
         background: rgba($primary-color, 0.6);
       }
@@ -216,16 +212,13 @@
       margin-top: 15vh;
     }
   }
-
   section#how {
-
     .tools {
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 1rem;
       padding: 1.5rem;
 
       .tool {
-
         img {
           height: 60px;
         }
@@ -249,9 +242,7 @@
         width: 240px;
         border-radius: 0;
       }
-
     }
-
   }
 
   .about-info {
@@ -267,10 +258,9 @@
 
   .projects {
     grid-template-columns: 1fr;
+
     .item {
       height: 35vh;
-
     }
   }
-
 }
