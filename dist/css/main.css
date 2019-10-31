@@ -603,8 +603,19 @@ main {
     grid-template-columns: repeat(1, 1fr); }
     .projects .item {
       height: 45vh; }
+      .projects .item:hover .inlay {
+        background: rgba(0, 0, 0, 0.1); }
+        .projects .item:hover .inlay .top, .projects .item:hover .inlay .bottom {
+          transform: translateY(0); }
+        .projects .item:hover .inlay .top {
+          opacity: 0; }
       .projects .item .inlay {
-        display: none; }
+        background: rgba(0, 0, 0, 0.1);
+        opacity: 1;
+        transform: scale(1); }
+        .projects .item .inlay .bottom {
+          opacity: 1;
+          margin-bottom: 36px; }
   .boxes {
     flex-direction: column; } }
 
@@ -644,6 +655,4 @@ main {
   .projects {
     grid-template-columns: 1fr; }
     .projects .item {
-      height: 35vh; }
-      .projects .item .inlay {
-        display: none; } }
+      height: 35vh; } }

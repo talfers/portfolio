@@ -154,8 +154,29 @@
     .item {
       height: 45vh;
 
+      &:hover {
+        .inlay {
+          background: rgba(0,0,0, 0.1);
+
+          .top, .bottom {
+            transform: translateY(0);
+          }
+
+          .top {
+            opacity: 0;
+          }
+        }
+      }
+
       .inlay {
-        display: none;
+        background: rgba(0,0,0, 0.1);
+        opacity: 1;
+        transform: scale(1);
+
+        .bottom {
+          opacity: 1;
+          margin-bottom: 36px;
+        }
       }
     }
   }
@@ -246,13 +267,9 @@
 
   .projects {
     grid-template-columns: 1fr;
-    // SEE HERE!
     .item {
       height: 35vh;
 
-      .inlay {
-        display: none;
-      }
     }
   }
 
