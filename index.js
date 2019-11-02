@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
-const transporter = require('./config/emailConfig');
+const nodemailer = require("nodemailer");
+const emailAuth = require("./config/emailAuth");
+// const transporter = require('./config/emailConfig');
 const port = process.env.PORT || 3000;
 
 // BodyParser Setup
@@ -35,6 +37,19 @@ app.post('/contact', (req, res)=>{
   if(!name || !email || !message) {
     res.redirect('/contact.html');
   }
+
+  var transporter = nodemailer.createTransport({
+      host: 'smtp.gmail.com',
+      port: 465,
+      secure: true,
+      auth: emailAuth,
+      tls: {
+          // do not fail on invalid certs
+          rejectUnauthorized: false
+      }
+  });
+
+  module.exports = transporter;
   const clientMailOptions = {
     from: 'alfalfatechnologies@gmail.com', // sender address
     to: email, // list of receivers
