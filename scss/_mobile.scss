@@ -193,6 +193,9 @@
       button[type=submit] {
         height: 2.5rem;
         font-size: 1.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
   }
