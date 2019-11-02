@@ -181,6 +181,20 @@
   }
   .boxes {
     flex-direction: column;
+
+    div.contact-form #form {
+      width: 100%;
+
+
+      input {
+        height: 3rem;
+        font-size: 1.25rem;
+      }
+      button[type=submit] {
+        height: 2.5rem;
+        font-size: 1.25rem;
+      }
+    }
   }
 }
 
@@ -264,19 +278,6 @@
 
     .item {
       height: 35vh;
-    }
-  }
-  .boxes {
-    div.contact-form #form {
-      width: 100%;
-
-
-      input {
-        height: 2.5rem;
-      }
-      button[type=submit] {
-        height: 2.5rem;
-      }
     }
   }
 }
