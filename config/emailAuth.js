@@ -1,6 +1,6 @@
 const emailAuth = {
-  user: 'alfalfatechnologies@gmail.com',
-  pass: 'PinBack3*0'
+  user: process.env.USER,
+  pass: process.env.PASS
 }
 
 module.exports = emailAuth;
