@@ -59,10 +59,16 @@ app.post('/contact', (req, res)=>{
     `// plain text body
   };
   transporter.sendMail(myMailOptions, function (err, info) {
-     if(err) console.log(err)
+     if(err) {
+       console.log(err);
+       res.redirect('/contact.html');
+     }
   });
   transporter.sendMail(clientMailOptions, function (err, info) {
-     if(err) console.log(err)
+     if(err) {
+       console.log(err);
+       res.redirect('/contact.html');
+     }
   });
   res.redirect('/index.html');
 });
