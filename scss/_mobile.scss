@@ -216,8 +216,16 @@
   }
   section {
     &#bg-image {
+      min-height: 90vh;
+      height: 90vh;
       &:after {
-        background: rgba($primary-color, 0.6);
+        min-height: 90vh;
+        height: 100%;
+        background: rgba($primary-color, 0.5);
+      }
+      article#home {
+        height: 90vh;
+        max-height: 90vh;
       }
     }
 

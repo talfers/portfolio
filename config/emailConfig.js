@@ -3,7 +3,7 @@ const emailAuth = require("./emailAuth");
 
 const transporter = nodemailer.createTransport({
  service: 'gmail',
- auth: emailAuth()
+ auth: emailAuth
 });
 
 module.exports = transporter;

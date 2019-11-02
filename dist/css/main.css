@@ -246,7 +246,8 @@
           padding-left: 0.5rem;
           outline: none; }
         .boxes div.contact-form #form textarea {
-          padding-top: 0.5rem; }
+          padding-top: 0.5rem;
+          font-family: sans-serif; }
         .boxes div.contact-form #form input {
           height: 1.75rem; }
         .boxes div.contact-form #form button[type=submit] {
@@ -627,7 +628,10 @@ main {
         font-size: 1.25rem; }
       .boxes div.contact-form #form button[type=submit] {
         height: 2.5rem;
-        font-size: 1.25rem; } }
+        font-size: 1.25rem;
+        display: flex;
+        align-items: center;
+        justify-content: center; } }
 
 @media screen and (max-width: 500px) {
   main {
@@ -636,8 +640,16 @@ main {
     height: 2.5rem; }
   h1.sm-header, h2.sm-header, h3.sm-header {
     width: 75%; }
-  section#bg-image:after {
-    background: rgba(245, 245, 245, 0.6); }
+  section#bg-image {
+    min-height: 90vh;
+    height: 90vh; }
+    section#bg-image:after {
+      min-height: 90vh;
+      height: 100%;
+      background: rgba(245, 245, 245, 0.5); }
+    section#bg-image article#home {
+      height: 90vh;
+      max-height: 90vh; }
   section#what, section#how {
     padding: 1rem 2rem; }
   section#bg-image article#home {
