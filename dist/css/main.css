@@ -660,7 +660,9 @@ main {
     grid-template-columns: 1fr; }
     .projects .item {
       height: 35vh; }
-  .boxes div.contact-form #form input {
-    height: 2.5rem; }
-  .boxes div.contact-form #form button[type=submit] {
-    height: 2.5rem; } }
+  .boxes div.contact-form #form {
+    width: 100%; }
+    .boxes div.contact-form #form input {
+      height: 2.5rem; }
+    .boxes div.contact-form #form button[type=submit] {
+      height: 2.5rem; } }
