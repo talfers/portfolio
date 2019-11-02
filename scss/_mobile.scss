@@ -189,6 +189,9 @@
   main {
     padding: 2rem 2rem;
   }
+  input {
+    height: 2.5rem;
+  }
   h1, h2, h3 {
     &.sm-header {
       width: 75%;
@@ -261,6 +264,16 @@
 
     .item {
       height: 35vh;
+    }
+  }
+  .boxes {
+    div.contact-form #form {
+      input {
+        height: 2.5rem;
+      }
+      button[type=submit] {
+        height: 2.5rem;
+      }
     }
   }
 }

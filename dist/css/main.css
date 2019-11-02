@@ -233,21 +233,23 @@
       width: 100%; }
       .boxes div.contact-form h3 {
         font-size: 1.5rem; }
-      .boxes div.contact-form form {
+      .boxes div.contact-form #form {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 75%; }
-        .boxes div.contact-form form input, .boxes div.contact-form form textarea {
+        .boxes div.contact-form #form input, .boxes div.contact-form #form textarea {
           width: 100%;
           margin: 0.25rem 0;
           border: none;
           border-radius: 1rem;
           padding-left: 0.5rem;
           outline: none; }
-        .boxes div.contact-form form input {
+        .boxes div.contact-form #form textarea {
+          padding-top: 0.5rem; }
+        .boxes div.contact-form #form input {
           height: 1.75rem; }
-        .boxes div.contact-form form button[type=submit] {
+        .boxes div.contact-form #form button[type=submit] {
           width: 100%;
           background: #FE5F55;
           margin: 0.5rem 0; }
@@ -622,6 +624,8 @@ main {
 @media screen and (max-width: 500px) {
   main {
     padding: 2rem 2rem; }
+  input {
+    height: 2.5rem; }
   h1.sm-header, h2.sm-header, h3.sm-header {
     width: 75%; }
   section#bg-image:after {
@@ -655,4 +659,8 @@ main {
   .projects {
     grid-template-columns: 1fr; }
     .projects .item {
-      height: 35vh; } }
+      height: 35vh; }
+  .boxes div.contact-form #form input {
+    height: 2.5rem; }
+  .boxes div.contact-form #form button[type=submit] {
+    height: 2.5rem; } }

@@ -196,7 +196,7 @@
         font-size: 1.5rem;
       }
 
-      form {
+      #form {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -209,6 +209,10 @@
           border-radius: 1rem;
           padding-left: 0.5rem;
           outline: none;
+        }
+
+        textarea {
+          padding-top: 0.5rem;
         }
 
         input {

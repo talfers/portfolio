@@ -1,11 +1,9 @@
 const nodemailer = require("nodemailer");
+const emailAuth = require("./emailAuth");
 
 const transporter = nodemailer.createTransport({
  service: 'gmail',
- auth: {
-      user: 'alfalfatechnologies@gmail.com',
-      pass: 'PinBack3*0'
-    }
+ auth: emailAuth()
 });
 
 module.exports = transporter;
